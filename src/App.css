@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #88f159;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar a {
+    padding: 0.45rem;
+    margin: 0 0.25rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.content-between {
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+.mx-2 {
+    margin: 0 2rem;
+}
+.my-2 {
+    margin: 2rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 1300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nintendo {
+    width: 450px;
+    height: 600px;
+    /* background-color: #f9f9f9; */
+    background-color: #e6e4e4;
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.wrapper {
+    background-color: #88f159;
+    width: 100vw;
+    height: 100%;
+}
+
+.screen-wrapper {
+    width: 400px;
+    height: 300px;
+    background: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen {
+    background-color: #45632b;
+    width: 350px;
+    height: 250px;
+}
+.rotate-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-template-rows: repeat(3, 30px);
+    /* background-color: palevioletred; */
+}
+.rotate {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.color-white {
+    color: white;
+}
+
+.rotate:nth-child(even) {
+    background-color: #2e2e2e;
+}
+.rotate:nth-child(5) {
+    background-color: #2e2e2e;
+}
+
+.two-btn {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+}
+
+.red-btn {
+    background-color: #d50355;
+    width: 35px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.red-btn:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+}
+.red-btn:nth-child(2) {
+    position: absolute;
+    right: 0;
+}
+.nintendo-box {
+    display: flex;
+    flex-direction: column;
+}
+.poke-list {
+    width: 450px;
+    height: 600px;
+    background-color: #e6e4e4;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-list {
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    width: 400px;
+    height: 350px;
+    /* background-color: #a9a9a9; */
+    background-color: rgb(19, 19, 19);
+    text-align: center;
+    column-count: 2;
+    padding: 0.18rem;
+}
+
+.poke-p {
+    color: #1498f0;
+}
+.poke-p:hover {
+    color: #bbe1fa;
+}
+
+@media screen and (min-width: 900px) {
+    .nintendo-box {
+        display: flex;
+        flex-direction: row;
+    }
+}
